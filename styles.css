@@ -1,0 +1,47 @@
+/* Estilos generales para centrar el contenido */
+body {
+    display: flex;
+    flex-direction: column; /* Para que el botón quede arriba del cuadro */
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: sans-serif;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Contenedor principal de la cuadrícula */
+#container {
+    width: 960px;          /* Tamaño fijo según el ejercicio */
+    height: 960px;
+    background-color: white;
+    border: 10px solid #333;
+    display: flex;         /* Usamos Flexbox */
+    flex-wrap: wrap;       /* Permite que los cuadros bajen de línea */
+}
+
+/* Estilo de cada cuadradito individual */
+.grid-square {
+    box-sizing: border-box; /* El borde se incluye en el tamaño total */
+    border: 1px solid #eee; /* Borde muy suave para ver la guía (opcional) */
+    background-color: white;
+    transition: background-color 0.1s; /* Suaviza un poco el pintado */
+}
